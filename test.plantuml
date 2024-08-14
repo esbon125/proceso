@@ -1,0 +1,26 @@
+@startuml
+!pragma useVerticalIf on
+start
+if (Estado del componente\n\t (5 minutos)) then (malo) 
+	:Desechos;
+	stop
+elseif (Ensamblaje de la Carcasa\n\t (10 minutos)) then (malo)
+	:Desechos;
+	stop
+elseif (Ensamblaje del Circuito Eléctrico\n\t (10 minutos)) then (malo)
+	:Desechos;
+	stop
+elseif (Ensamblaje de teclado y baterías\n\t (7 minutos)) then (malo)
+	:Desechos;
+	stop
+elseif (Prueba de Calidad\n\t (3 minutos)) then (malo)
+	:Desechos;
+	stop
+elseif (Empaque\n\t (4 minutos)) then (malo)
+	:Desechos;
+	stop
+
+	
+endif
+end
+@enduml
